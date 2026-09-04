@@ -1,6 +1,6 @@
 # 🐘 PHP Course — Dani Krossing (YouTube)
 
-Este repositório contém todos os meus exercícios, códigos de estudo, notas e pequenos projetos desenvolvidos ao longo do **Curso Completo de PHP** ministrado por **Dani Krossing** no YouTube.
+Este repositório contém todos os meus exercícios, códigos de estudo desenvolvidos ao longo do **Curso de PHP** ministrado por **Dani Krossing** no YouTube.
 
 O objetivo principal deste repositório é consolidar os meus conhecimentos em desenvolvimento web *backend*, boas práticas de programação e integração com bancos de dados.
 
@@ -35,10 +35,10 @@ O repositório está organizado de acordo com os módulos do curso:
 
 ```text
 .
-├── 01-fundamentos/          # Sintaxe básica, variáveis e operadores
-├── 02-estruturas-controlo/  # Condicionais, loops e funções
-├── 03-formularios/          # Tratamento e validação de formulários
-├── 04-base-de-dados/        # Conexão PDO, MySQL e operações CRUD
-├── 05-sessoes-seguranca/    # Gerenciamento de sessões, cookies e hashing
-├── 06-oop-php/              # Programação Orientada a Objetos
-└── README.md                # Documentação do repositório
+ 01-fundamentos/          # Sintaxe básica, variáveis e operadores
+02-estruturas-controlo/  # Condicionais, loops e funções
+03-formularios/          # Tratamento e validação de formulários
+04-base-de-dados/        # Conexão PDO, MySQL e operações CRUD
+05-sessoes-seguranca/    # Gerenciamento de sessões, cookies e hashing
+06-oop-php/              # Programação Orientada a Objetos
+README.md                # Documentação do repositório
