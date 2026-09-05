@@ -39,7 +39,7 @@
 // =======================================================================
         echo "<hr>";
         echo "<h4>Data e Hora em PHP</h4>";
-        // echo date("Y-m-d H:i:s");
+        echo date("Y-m-d H:i:s");
         $data = "05-09-2026 21:00:00";
         // echo strtotime($data);
         // echo time();
