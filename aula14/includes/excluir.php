@@ -3,7 +3,6 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $username = $_POST["nome"];
-        $email = $_POST["email"];
         $senha = $_POST["password"];
 
         try{
@@ -16,23 +15,23 @@
                 $senha
             ]); */
 
-            $query = "INSERT INTO usuarios (nome, email, senha) Values (:nome, :email, :senha)";
+            $query = "DELETE FROM usuarios WHERE nome = :nome AND senha = :senha;";
             $stmt = $pdo->prepare($query);
 
             $stmt->bindparam(":nome", $username);
-            $stmt->bindparam(":email", $email);
             $stmt->bindparam(":senha", $senha);
-            
+
             $stmt->execute();
+
             $pdo = null;
             $stmt = null;
 
-            header("Location: ../sign_up.php");
+            header("Location: ../delete.php");
             die();
         }catch(PDOException $e){
             die("Falha na conexão: " . $e->getMessage());
         }
         
     }else{
-        header("Location: ../sign_up.php");
+        header("Location: ../delete.php");
     }

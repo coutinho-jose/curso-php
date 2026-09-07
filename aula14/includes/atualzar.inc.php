@@ -16,14 +16,16 @@
                 $senha
             ]); */
 
-            $query = "INSERT INTO usuarios (nome, email, senha) Values (:nome, :email, :senha)";
+            $query = "UPDATE usuarios SET nome = :nome, email = :email, senha = :senha WHERE id = 8";
+
             $stmt = $pdo->prepare($query);
 
             $stmt->bindparam(":nome", $username);
             $stmt->bindparam(":email", $email);
             $stmt->bindparam(":senha", $senha);
-            
+
             $stmt->execute();
+
             $pdo = null;
             $stmt = null;
 
